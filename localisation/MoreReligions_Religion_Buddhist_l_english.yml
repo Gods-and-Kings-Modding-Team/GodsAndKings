@@ -41,6 +41,8 @@
  azhaliism_rebels_army: "$RELIGION$ Army"
  azhaliism_rebels_demand: "Convert $COUNTRYNAME$"
  azhaliism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+harmonized_mr_maitreya: "Harmonized Maitreya"
+harmonized_azhaliism: "Harmonized Azhali"
  
  nihon:0 "Shinbutsu"
  nihon_religion_desc:0 "This religion is an amalgamation of the various schools of Buddhism in Japan, from Zen to Pure Land, that existed alongside traditional ancestor worship. Following similar practices to Mahayana Buddhism, it is located entirely within Japan."

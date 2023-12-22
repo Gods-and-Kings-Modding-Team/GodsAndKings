@@ -1296,7 +1296,7 @@ mr_catholic_center_of_reformation = {
 	
 	map_icon = GFX_religious_conversion_center_protestant
 
-	max_distance = 15.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 2.5
 
 	target_province_weights = {
@@ -1398,7 +1398,7 @@ mr_orthodox_center_of_reformation = {
 	
 	map_icon = GFX_religious_conversion_center_protestant
 
-	max_distance = 15.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 2.5
 
 	target_province_weights = {
@@ -1470,7 +1470,7 @@ shiite_center_of_reformation = {
 	
 	religion = shiite
 
-	map_icon = GFX_religious_conversion_center_trading_policy
+	map_icon = GFX_religious_conversion_center_trading_polic
 
 	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 2.5
