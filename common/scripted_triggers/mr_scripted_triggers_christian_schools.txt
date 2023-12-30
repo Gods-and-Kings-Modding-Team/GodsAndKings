@@ -24,13 +24,13 @@ has_religious_scholars_trigger_christian = {
 			has_country_modifier = mr_lyonese_rite_modifier
 			has_country_modifier = mr_uppsala_rite_modifier
 			has_country_modifier = mr_esztergom_rite_modifier
-				
+
 			has_country_modifier = mr_westorthodox_rite_modifier
-			
+
 			has_country_modifier = mr_presbyterian_rite_modifier
 			has_country_modifier = mr_continental_rite_modifier
 			has_country_modifier = mr_congregationalist_rite_modifier
-			
+
 		}
 	}
 }
@@ -117,6 +117,14 @@ has_catholic_rite_trigger = {
 		religious_school = {
 			group = christian
 			school = mr_esztergom_rite
+		}
+		AND = {
+			religion = catholic
+			religious_school = {
+				group = christian
+				school = mr_antiochian_rite
+			}
+			is_levantine_crusader_state = yes
 		}
 	}
 }

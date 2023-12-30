@@ -817,8 +817,10 @@ estate_burghers_crusaders_grant_italian_quarter = {
 				add_center_of_trade_level = 1
 			}
 			# Have to use separate effect to create a CoT from scratch
-			else = {
+			else_if = {
+				limit = { NOT = { owner = { has_country_flag = added_new_CoT } } }
 				center_of_trade = 1
+				owner = { set_country_flag = added_new_CoT }
 			}
 			add_province_modifier = {
 				name = cs_italian_quarter_institution_spread
@@ -828,9 +830,10 @@ estate_burghers_crusaders_grant_italian_quarter = {
 	}
 
 	on_revoked = {
-		capital_scope = {
-			add_center_of_trade_level = -1
+		every_owned_province = {
+			limit = { has_province_modifier = cs_italian_quarter_institution_spread }
 			remove_province_modifier = cs_italian_quarter_institution_spread
+			add_center_of_trade_level = -1
 		}
 	}
 }

@@ -555,7 +555,7 @@ holy_state_reform = {
 		OR = {
 			AND = {
 				OR = {
-					is_levantine_crusader_state = yes
+					tag = KOJ
 					tag = LAE
 					has_country_modifier = sisters_takeover
 				}

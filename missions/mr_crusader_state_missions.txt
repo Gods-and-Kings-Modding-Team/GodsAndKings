@@ -685,6 +685,7 @@ crusader_missions_domination_path = {
 			NOT = {
 				any_known_country = {
 					is_levantine_crusader_state = yes
+					NOT = { tag = ROOT }
 				}
 			}
 		}

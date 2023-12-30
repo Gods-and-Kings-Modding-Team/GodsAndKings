@@ -242,6 +242,8 @@
   mr_crusader_guardian_of_the_kaaba_tt: "Has chosen the '§YWe will become guardians of the Kaaba!§!' Option in the @KOJ Crusader mission event §YFate of the Kaaba§!."
   general_flag_for_FU_Rome_flag: "We will not receive a malus for vassalizing @PAP §YThe Papal States§!."
   cs_num_coasts_raided: "Number of coastal raids"
+  is_levantine_crusader_state_tt: "Is a §YLevantine Crusader State§!"
+  cs_valid_for_settlers_tt: "Province in the §YMiddle East sub-continent§! that does not have settlers already and is not the capital."
 
 
 

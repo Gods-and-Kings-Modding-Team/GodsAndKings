@@ -5,7 +5,7 @@
 christian = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
-	
+
 	center_of_religion = 118 # Rome
 
 	# Flag emblem values - Used for Dynamic Setup of Random Nations.
@@ -805,37 +805,37 @@ christian = {
 			tolerance_own = 1
 			global_heathen_missionary_strength = 0.01
 		}
-		
+
 		country_as_secondary = {
 			diplomatic_reputation = 1
 			advisor_pool = 1
 		}
-		
+
 		hre_religion = yes
-		
+
 		on_convert = {
 			change_religion = catholic
 			add_prestige = -100
-			
+
 			remove_country_modifier = the_test_act
 			remove_country_modifier = superintendent_office
 			remove_country_modifier = the_popery_act
-			
+
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
-			}			
-		
+			}
+
 		}
-		
+
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
-		
+
 		papacy = {
 			papal_tag = PAP
 			election_cost = 5
 			seat_of_papacy = 118 # rome
-			
-			
+
+
 			#Council of Trent Positions
 			harsh = {
 				relation_with_heretics = -10
@@ -852,14 +852,14 @@ christian = {
 				global_heretic_missionary_strength = -0.05
 				improve_relation_modifier = 0.25
 			}
-			
+
 			#Council of Trent Concessions
 			concessions = {
 				first_concession = {
 					harsh = {
 						relation_with_heretics = -10
 						global_heretic_missionary_strength  = 0.02
-					}	
+					}
 					concilatory = {
 						relation_with_heretics = 5
 						tolerance_heretic = 2
@@ -869,7 +869,7 @@ christian = {
 					harsh = {
 						relation_with_heretics = -10
 						institution_spread_from_true_faith = 0.30
-					}	
+					}
 					concilatory = {
 						relation_with_heretics = 5
 						global_institution_spread = 0.10
@@ -879,7 +879,7 @@ christian = {
 					harsh = {
 						relation_with_heretics = -10
 						manpower_in_true_faith_provinces  = 0.1
-					}	
+					}
 					concilatory = {
 						relation_with_heretics = 5
 						global_manpower_modifier = 0.05
@@ -889,22 +889,22 @@ christian = {
 					harsh = {
 						relation_with_heretics = -10
 						warscore_cost_vs_other_religion  = -0.10
-					}	
+					}
 					concilatory = {
 						relation_with_heretics = 5
 						curia_powers_cost = -0.10
 					}
 				}
 			}
-			
 
 
-			
-			
-			
-			
+
+
+
+
+
 			# Papal Actions below!
-			
+
 			levy_church_tax = {
 				cost = 50
 				potential = {
@@ -922,8 +922,8 @@ christian = {
 				}
 				ai_will_do = {
 					factor = 1
-				}				
-			}			
+				}
+			}
 			bless_monarch = {
 				cost = 50
 				potential = {
@@ -961,7 +961,7 @@ christian = {
 				ai_will_do = {
 					factor = 1
 				}
-			}	
+			}
 			local_saint = {
 				cost = 100
 				potential = {
@@ -1004,7 +1004,7 @@ christian = {
 						NOT = { num_of_loans = 1 }
 					}
 				}
-			}			
+			}
 			proclaim_holy_war = {
 				cost = 50
 				potential = {
@@ -1048,7 +1048,7 @@ christian = {
 				ai_will_do = {
 					factor = 1
 				}
-			}	
+			}
 			sanction_commercial_monopoly = {
 				cost = 50
 				potential = {
@@ -1103,13 +1103,13 @@ christian = {
 			development_cost = -0.1
 			technology_cost = -0.05
 		}
-		
+
 		country_as_secondary = {
 			idea_cost = -0.1
 		}
-		
+
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
-		
+
 		aspects = {
 			divorce_consort_aspect
 			gain_consort_aspect
@@ -1123,12 +1123,12 @@ christian = {
 			spread_the_book_of_common_prayer
 		}
 		aspects_name = ANGLICAN_ASPECTS
-		
+
 		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
-		
+
 		date = 1534.11.3 # act of supremacy
 	}
-	
+
 	hussite = {
 		color = { 244 55 9 }
 		icon = 22
@@ -1140,13 +1140,13 @@ christian = {
 			shock_damage_received = -0.05
 			global_heretic_missionary_strength = 0.02
 		}
-		
+
 		country_as_secondary = {
 			shock_damage_received = -0.025
 		}
-		
+
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
-		
+
 		aspects = {
 			clerical_poverty_aspect
 			bread_and_wine_aspect
@@ -1160,10 +1160,10 @@ christian = {
 			freedom_to_preach_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
-		
+
 		heretic = { TABORITE UTRAQUIST ORPHAN }
 	}
-	
+
 	protestant = {
 		color = { 0 0 178 }
 		icon = 2
@@ -1180,11 +1180,11 @@ christian = {
 			improve_relation_modifier = 0.15
 			church_loyalty_modifier = 0.1
 		}
-		
+
 		country_as_secondary = {
 			idea_cost = -0.1
 		}
-		
+
 		uses_church_power = yes				# Uses church power/aspect mechanics
 		aspects = {
 			organised_through_bishops_aspect
@@ -1204,9 +1204,9 @@ christian = {
 			head_of_the_church_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
-		
+
 		hre_heretic_religion = yes
-		
+
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
@@ -1226,7 +1226,7 @@ christian = {
 			remove_country_modifier = the_declaration_of_indulgence
 			remove_country_modifier = de_heretico_comburendo
 			remove_country_modifier = the_conventicle_act
-	
+
 			if = {
 				limit = {
 					has_country_flag = reformation_money
@@ -1280,11 +1280,11 @@ christian = {
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}
-			
+
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
-			}			
+			}
 			set_country_flag = reformation_money
 			every_known_country = {
 				limit = {
@@ -1299,9 +1299,9 @@ christian = {
 				}
 			}
 		}
-		
+
 		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
-		
+
 		date = 1517.10.31
 	}
 
@@ -1319,7 +1319,7 @@ christian = {
 			tolerance_heretic = 2
 			advisor_pool = 1
 		}
-		
+
 		country_as_secondary = {
 			global_unrest = -1
 			advisor_cost = -0.1
@@ -1332,7 +1332,7 @@ christian = {
 				}
 			}
 		}
-		
+
 		on_convert = {
 			change_religion = reformed
 			add_prestige = -100
@@ -1344,7 +1344,7 @@ christian = {
 			remove_country_modifier = the_declaration_of_indulgence
 			remove_country_modifier = de_heretico_comburendo
 			remove_country_modifier = the_conventicle_act
-			
+
 			if = {
 				limit = {
 					has_country_flag = reformation_money
@@ -1416,11 +1416,11 @@ christian = {
 				}
 			}
 		}
-		
+
 		heretic = { METHODIST BAPTIST QUAKER }
-		
+
 		date = 1536.5.1
-		
+
 		fervor = yes
 	}
 
@@ -1438,7 +1438,7 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		allowed_center_conversion = {
 			catholic
 			mr_waldensian
@@ -1448,17 +1448,17 @@ christian = {
 			mr_bogomil
 		}
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
-		
+
 		has_patriarchs = yes		# Uses patriarch authority
 		misguided_heretic = yes		# Other christians hate them less
-		
+
 		orthodox_icons = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			icon_michael = {
 				discipline = 0.05
 				manpower_recovery_speed = 0.1
-				
+
 				allow = {
 					always = yes
 				}
@@ -1483,7 +1483,7 @@ christian = {
 			icon_eleusa = {
 				global_unrest = -3
 				harsh_treatment_cost = -0.25
-				
+
 				allow = {
 					always = yes
 				}
@@ -1491,7 +1491,7 @@ christian = {
 				visible = {
 					always = yes
 				}
-				
+
 				ai_will_do = {
 					factor = 0.02
 					modifier = {
@@ -1520,7 +1520,7 @@ christian = {
 			icon_pancreator = {
 				development_cost = -0.10
 				build_cost = -0.1
-				
+
 				allow = {
 					always = yes
 				}
@@ -1528,20 +1528,20 @@ christian = {
 				visible = {
 					always = yes
 				}
-				
+
 				ai_will_do = {
 					factor = 0
 				}
 			}
-	
+
 			icon_nicholas = {
 				improve_relation_modifier = 0.25
 				ae_impact = -0.1
-				
+
 				visible = {
 					always = yes
 				}
-				
+
 				allow = {
 					OR = {
 						culture_group = east_slavic
@@ -1550,7 +1550,7 @@ christian = {
 						mission_completed = mr_greek_orthodox_second
 						mission_completed = knn_religion_fourth
 					}
-					
+
 				}
 				ai_will_do = {
 					factor = 0.01
@@ -1597,12 +1597,12 @@ christian = {
 
 			#Gods and Kings
 			icon_panagia = {
-				idea_cost = -0.1	
-				advisor_cost = -0.1	
+				idea_cost = -0.1
+				advisor_cost = -0.1
 				visible = {
 					always = yes
 				}
-				
+
 				allow = {
 					culture_group = byzantine
 				}
@@ -1613,11 +1613,11 @@ christian = {
 			icon_nikolaos = {
 				naval_morale = 0.10
 				trade_steering = 0.15
-				
+
 				visible = {
 					always = yes
 				}
-				
+
 				allow = {
 					culture_group = byzantine
 				}
@@ -1627,9 +1627,9 @@ christian = {
 			}
 		}
 	}
-	
+
 	coptic = {
-	
+
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
@@ -1646,13 +1646,13 @@ christian = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
+
 		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
-		
+
 		misguided_heretic = yes
-		
+
 		holy_sites = { 358 1227 2313 1234 419 }
-		
+
 		blessings = {
 			legitimize_government
 			encourage_warriors_of_the_faith
@@ -1661,7 +1661,7 @@ christian = {
 			will_of_the_martyrs
 		}
 	}
-	
+
 	mr_cathar = {
 
 		color = { 143 42 24 }
@@ -1678,17 +1678,17 @@ christian = {
 			local_missionary_strength = -0.03
 			local_missionary_maintenance_cost = 0.25
 		}
-		
+
 		allowed_conversion = {
 			reformed
 			protestant
 		}
-		
+
 		reform_tooltip = CATHAR_REFORM_TOOLTIP
 		heretic = { REPENTANTCATHARS }
-		
+
 	}
-	
+
 	mr_maronite = { #eastern Catholic
 
 		color = { 204 180 58 }
@@ -1698,7 +1698,7 @@ christian = {
 			tolerance_heretic = 2
 		}
 		country_as_secondary = {
-			
+
 		}
 		province = {
 			local_missionary_strength = -0.01
@@ -1710,7 +1710,7 @@ christian = {
 				tolerance_heretic = -3
 				tolerance_own = 3
 				defensiveness = 0.3
-				
+
 				allow = {
 					always = yes
 				}
@@ -1723,11 +1723,11 @@ christian = {
 				}
 			}
 		}
-		
+
 		heretic = { MARONITEHERETICS }
-		
+
 	}
-	
+
 	mr_methodist = {
 
 		color = { 79 157 194 }
@@ -1741,11 +1741,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { METHODISTHERETICS }
-		
+
 	}
-	
+
 	mr_anabaptist = {
 
 		color = { 77 64 122 }
@@ -1759,11 +1759,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { ANABAPTISTTHERETICS }
-		
+
 	}
-	
+
 	mr_waldensian = {
 
 		color = { 219 56 56 }
@@ -1777,11 +1777,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { WALDENSIANHERETICS }
-		
+
 	}
-	
+
 	mr_fraticelli = {
 
 		color = { 133 62 62 }
@@ -1801,9 +1801,9 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		fervor = yes
-		
+
 		on_convert = {
 			add_stability = -2
 			add_prestige = -50
@@ -1820,13 +1820,13 @@ christian = {
 				remove_country_modifier = the_declaration_of_indulgence
 				remove_country_modifier = de_heretico_comburendo
 				remove_country_modifier = the_conventicle_act
-				
+
 			}
 		}
 		heretic = { FRATICELLIHERETICS }
-		
+
 	}
-	
+
 	mr_bogomil = {
 
 		color = { 122 59 31 }
@@ -1840,11 +1840,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { BOGOMILHERETICS }
-		
+
 	}
-	
+
 	mr_freespirit = {
 
 		color = { 173 79 39 }
@@ -1858,11 +1858,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { FREESPIRITHERETICS }
-		
+
 	}
-	
+
 	mr_lollard = {
 		color = { 189 113 94 }
 		icon = 38
@@ -1871,13 +1871,13 @@ christian = {
 		}
 		country = {
 			tolerance_heretic = 1
-			
+
 		}
 		country_as_secondary = {
 			tolerance_heretic = 1
 		}
 		province = {
-			
+
 		}
 		will_get_center = {
 			any_owned_province = {
@@ -1925,9 +1925,9 @@ christian = {
 			}
 		}
 		heretic = { LOLLARDHERETICS }
-		
+
 	}
-	
+
 	mr_nestorian = {
 
 		color = { 250 111 20 }
@@ -1941,11 +1941,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { NESTORIANHERETICS }
-		
+
 	}
-	
+
 	mr_baptist = {
 
 		color = { 17 85 204 }
@@ -1959,11 +1959,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { BAPTISTHERETICS }
-		
+
 	}
-	
+
 	mr_protoprotestant = {
 
 		color = { 204 189 139 }
@@ -1977,11 +1977,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { PROTOPROTESTANTHERETICS }
-		
+
 	}
-	
+
 	mr_adamite = {
 
 		color = { 163 124 104 }
@@ -1995,11 +1995,11 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { ADAMITEHERETICS }
-		
+
 	}
-	
+
 	mr_antipapist = {
 
 		color = { 201 1 1 }
@@ -2013,12 +2013,12 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { ANTIANTIPAPISTS }
-		
+
 		date = 1480.1.1 #Western Schism
 	}
-	
+
 	#third pope, second antipope
 	mr_counterpapist = {
 
@@ -2033,13 +2033,13 @@ christian = {
 		province = {
 			local_missionary_strength = -0.01
 		}
-		
+
 		heretic = { ANTIANTIPAPISTS }
-		
+
 		date = 1480.1.1 #Western Schism
 	}
-	
+
 	harmonized_modifier = harmonized_christian
-	
+
 	crusade_name = CRUSADE
 }

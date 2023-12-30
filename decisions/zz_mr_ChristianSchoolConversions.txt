@@ -1,5 +1,5 @@
 country_decisions = {
-	
+
 	mr_reaffirm_rites = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -17,7 +17,7 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	
+
 	mr_change_catholic_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -38,9 +38,9 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	
+
 ###EAST CATHOLIC / COPTIC SCHOOLS / ORTHODOX
-	
+
 	mr_change_to_alexandrian_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -90,7 +90,7 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	
+
 	mr_change_to_armenian_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -109,7 +109,7 @@ country_decisions = {
 		allow = {
 			theologian = 1
 			stability = 2
-			accepted_culture = armenian 
+			accepted_culture = armenian
 		}
 		effect = {
 			set_country_flag = has_changed_rites
@@ -135,7 +135,7 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	
+
 	mr_change_to_byzantine_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -175,20 +175,21 @@ country_decisions = {
 			}
 			set_religious_school = {
 				group = christian
-				school = mr_byzantine_rite	
+				school = mr_byzantine_rite
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	mr_change_to_antiochian_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			OR = {
 				religion = mr_maronite
 				religion = coptic
+				is_levantine_crusader_state = yes
 			}
 			NOT = { has_country_flag = has_changed_rites }
 			NOT = {
@@ -204,6 +205,7 @@ country_decisions = {
 			OR = {
 				owns = 2313 #antioch
 				accepted_culture = al_suryah_arabic
+				accepted_culture = outremer
 			}
 		}
 		effect = {
@@ -223,14 +225,14 @@ country_decisions = {
 			}
 			set_religious_school = {
 				group = christian
-				school = mr_antiochian_rite	
+				school = mr_antiochian_rite
 			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	mr_change_to_chaldean_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -265,7 +267,7 @@ country_decisions = {
 			}
 			set_religious_school = {
 				group = christian
-				school = mr_chaldean_rite	
+				school = mr_chaldean_rite
 			}
 		}
 		ai_will_do = {
@@ -308,7 +310,7 @@ country_decisions = {
 			}
 			set_religious_school = {
 				group = christian
-				school = mr_westorthodox_rite	
+				school = mr_westorthodox_rite
 			}
 		}
 		ai_will_do = {
