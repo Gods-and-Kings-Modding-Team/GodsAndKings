@@ -678,6 +678,7 @@ crusader_missions_domination_path = {
 		provinces_to_highlight = {
 			is_capital = yes
 			owner = { is_levantine_crusader_state = yes }
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
